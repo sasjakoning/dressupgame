@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speeldungeon.nl</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Alle afbeeldingen in deze website zijn eigen werk -->
+    <header>
+        <h1>SpeelDungeon.nl</h1>
+        <ul>
+            <li>Actie</li>
+            <li>Avontuur</li>
+            <li>Puzzel</li>
+            <li>Sport</li>
+            <li><input type="text" placeholder="Search.."></li>
+        </ul>
+    </header>
+    <main>
+
+        <article>
+
+            <div class="popUp">
+                
+                <figure id="popUpCross">
+                    <img src="images/cross.svg" alt="">
+                </figure>
+            </div>
+            
+            <div class="popUp2">
+                
+                <figure>
+                    <h1>Deze website gebruikt geen cookies</h1>
+                    <p>Maar toch geven we deze melding om vervelend te zijn.</p>
+                </figure>
+
+                <figure>
+                    <button id="accept" >accept</button>
+                    <button id="decline" >decline</button>
+                </figure>
+            </div>
+
+            <div class="popUp3">
+                
+                <h1>Decline? :( ... je hebt zeker ook een adblocker he...</h1>
+
+                <figure id="popUpCross2">
+                    <img src="images/cross.svg" alt="">
+                </figure>
+                
+            </div>
+
+            <figure>
+                <h1>Generic dressup game</h1>
+            </figure>
+
+            <article class="game">
+
+                <section class="gender" id="btnmenu1">
+                    <figure>
+                        <img class="btn" src="images/icon-female.svg" alt="">
+                        <img class="btn" src="images/icon-male.svg" alt="">
+                    </figure>
+                </section>
+
+                <section class="music-removeall">
+                    <img id="musicToggle" src="images/icon-soundoff.svg" alt="">
+                    <audio id="music" src="images/223725__bigcat-smauls__without-a-care-loop.wav"></audio>
+                    <button id="removeAll">Remove all</button>
+                </section>
+
+                <section class="character">
+
+                    <div id="dropzone"></div>
+
+                    <figure>
+                        <img src="images/female1.svg" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+
+                </section>
+
+                <section class="menu">
+
+                    <section class="menu-categories">
+
+                        <figure id="btnskin" data-number="1" class="catbtn active">
+
+                            <img src="images/icon-skin.svg" alt="">
+                        </figure>
+
+                        <figure id="btnpants" data-number="2"  class="catbtn">
+                            <img src="images/icon-pants.svg" alt="">
+                        </figure>
+
+                        <figure id="btnhair" data-number="3"  class="catbtn">
+                            <img src="images/icon-hair.svg" alt="">
+                        </figure>
+
+                        <figure id="btnshirt" data-number="4"  class="catbtn">
+                            <img src="images/icon-shirt.svg" alt="">
+                        </figure>
+
+                        <figure id="btnacces" data-number="5"  class="catbtn">
+                            <img src="images/icon-accessoires.svg" alt="">
+                        </figure>
+
+                        <figure id="btnfinish">
+                            <img src="images/finish.svg" alt="">
+                        </figure>
+
+                    </section>
+
+
+                    <section class="menu-grid content" data-number="1" id="skinmenu">
+
+                        <figure id="skin-fig1" 
+                        data-number="1.1"
+                        class="skin imgcontainer">   
+                            <img class="cross" data-number="1.1" src="images/cross.svg" alt="" >                    
+                            <img  
+                            class="object skin"
+                            data-number="1.1"
+                            src="images/female1.svg" alt="">
+                        </figure>
+
+                        <figure id="skin-fig2" 
+                        data-number="1.2"
+                        class="skin imgcontainer">
+                            <img class="cross" data-number="1.2" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object skin"
+                            data-number="1.2"
+                            src="images/female2.svg" alt="">
+                        </figure>
+
+                        <figure id="skin-fig3" 
+                        data-number="1.3"
+                        class="skin imgcontainer">
+                            <img class="cross" data-number="1.3" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object skin"
+                            data-number="1.3"
+                            src="images/female3.svg" alt="">
+                        </figure>
+
+                        <figure id="skin-fig4" 
+                        data-number="1.4"
+                        class="skin imgcontainer">
+                            <img class="cross" data-number="1.4" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object skin"
+                            data-number="1.4"
+                            src="images/female4.svg" alt="">
+                        </figure>
+
+                        <figure id="face-fig1" 
+                        data-number="1.5"
+                        class="face imgcontainer">
+                            <img class="cross" data-number="1.5" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object face"
+                            data-number="1.5"
+                            src="images/face1.svg" alt="">
+                        </figure>
+
+                        <figure id="face-fig2" 
+                        data-number="1.6"
+                        class="face imgcontainer">
+                            <img class="cross" data-number="1.6" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object face"
+                            data-number="1.6"
+                            src="images/face2.svg" alt="">
+                        </figure>
+
+                        <figure id="face-fig3" 
+                        data-number="1.7"
+                        class="face imgcontainer">
+                            <img class="cross" data-number="1.7" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object face"
+                            data-number="1.7"
+                            src="images/face3.svg" alt="">
+                        </figure>
+
+                        <figure id="face-fig4" 
+                        data-number="1.8"
+                        class="face imgcontainer">
+                            <img class="cross" data-number="1.8" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object face"
+                            data-number="1.8"
+                            src="images/face4.svg" alt="">
+                        </figure>
+
+                        <figure id="face-fig5" 
+                        data-number="1.9"
+                        class="face imgcontainer">
+                            <img class="cross" data-number="1.9" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object face"
+                            data-number="1.9"
+                            src="images/face5.svg" alt="">
+                        </figure>
+
+                        <figure id="face-fig6" 
+                        data-number="1.10"
+                        class="face imgcontainer">
+                            <img class="cross" data-number="1.10" src="images/cross.svg" alt="" >
+                            <img  
+                            class="object face"
+                            data-number="1.10"
+                            src="images/face6.svg" alt="">
+                        </figure>
+
+                        <figure id="skin-fig5"
+                        data-number="1.11">
+                            <img  
+                            class="object"
+                            data-number="1.11"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="skin-fig6"
+                        data-number="1.12">
+                            <img  
+                            class="object"
+                            data-number="1.12"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+
+                    </section>
+
+                    <section class="menu-grid content"  data-number="2"  id="pantsmenu">
+
+                        <figure 
+                        class="pants imgcontainer" data-number="2.1"
+                        id="pants-fig1">    
+                        <img class="cross" data-number="2.1" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object pants" data-number="2.1"
+                        src="images/pants1.svg" alt="">
+                        </figure>
+    
+                        <figure 
+                        class="pants imgcontainer"
+                        data-number="2.2"
+                        id="pants-fig2">
+                        <img class="cross" data-number="2.2" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object pants"
+                        data-number="2.2"
+                        src="images/pants2.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="pants imgcontainer"
+                        data-number="2.3"
+                        id="pants-fig3">
+                        <img class="cross" data-number="2.3" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object pants"
+                        data-number="2.3"
+                        src="images/pants3.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="pants imgcontainer"
+                        data-number="2.4"
+                        id="pants-fig4">
+                        <img class="cross" data-number="2.4" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object pants"
+                        data-number="2.4"
+                        src="images/pants4.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="pants imgcontainer"
+                        data-number="2.5"
+                        id="pants-fig5">
+                        <img class="cross" data-number="2.5" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object pants"
+                        data-number="2.5"
+                        src="images/pants5.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="pants imgcontainer"
+                        data-number="2.6"
+                        id="shoes-fig1">
+                        <img class="cross" data-number="2.6" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shoes"
+                        data-number="2.6"
+                        src="images/shoes1.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="pants imgcontainer"
+                        data-number="2.7"
+                        id="shoes-fig2">
+                        <img class="cross" data-number="2.7" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shoes"
+                        data-number="2.7"
+                        src="images/shoes2.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="pants imgcontainer"
+                        data-number="2.8"
+                        id="shoes-fig3">
+                        <img class="cross" data-number="2.8" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shoes"
+                        data-number="2.8"
+                        src="images/shoes3.svg" alt="">
+                        </figure>
+    
+                        <figure id="pants-fig6"
+                        data-number="2.9">
+                            <img  
+                            class="object"
+                            data-number="2.9"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+                        
+                        <figure id="pants-fig7"
+                        data-number="2.10">
+                            <img  
+                            class="object"
+                            data-number="2.10"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="pants-fig8"
+                        data-number="2.11">
+                            <img  
+                            class="object"
+                            data-number="2.11"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="pants-fig9" data-number="2.12">
+                            <img  
+                            class="object"
+                            data-number="2.12"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+    
+    
+                    </section>
+
+                    
+                    <section class="menu-grid content"  data-number="3"  id="hairmenu">
+
+                        <figure 
+                        class="hair imgcontainer" data-number="3.1"
+                        id="hair-fig1">    
+                        <img class="cross" data-number="3.1" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object hair" data-number="3.1"
+                        src="images/hair1.svg" alt="">
+                        </figure>
+    
+                        <figure 
+                        class="hair imgcontainer"
+                        data-number="3.2"
+                        id="hair-fig2">
+                        <img class="cross" data-number="3.2" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object hair"
+                        data-number="3.2"
+                        src="images/hair2.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="hair imgcontainer"
+                        data-number="3.3"
+                        id="hair-fig3">
+                        <img class="cross" data-number="3.3" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object hair"
+                        data-number="3.3"
+                        src="images/hair3.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="hair imgcontainer"
+                        data-number="3.4"
+                        id="hair-fig4">
+                        <img class="cross" data-number="3.4" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object hair"
+                        data-number="3.4"
+                        src="images/hair4.svg" alt="">
+                        </figure>
+
+                        <figure id="hair-fig5" data-number="3.5">
+                            <img  
+                            class="object"
+                            data-number="3.5"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="hair-fig6" data-number="3.6">
+                            <img  
+                            class="object"
+                            data-number="3.6"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="hair-fig7" data-number="3.7">
+                            <img  
+                            class="object"
+                            data-number="3.7"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="hair-fig8" data-number="3.8">
+                            <img  
+                            class="object"
+                            data-number="3.8"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+    
+                        <figure id="hair-fig9"
+                        data-number="3.9">
+                            <img  
+                            class="object"
+                            data-number="3.9"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+                        
+                        <figure id="hair-fig10"
+                        data-number="3.10">
+                            <img  
+                            class="object"
+                            data-number="3.10"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="hair-fig11"
+                        data-number="3.11">
+                            <img  
+                            class="object"
+                            data-number="3.11"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="hair-fig12" data-number="3.12">
+                            <img  
+                            class="object"
+                            data-number="3.12"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+    
+    
+                    </section>
+
+                    <section class="menu-grid content"  data-number="4"  id="shirtmenu">
+
+                        <figure 
+                        class="shirt imgcontainer" data-number="4.1"
+                        id="shirt-fig1">    
+                        <img class="cross" data-number="4.1" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shirt" data-number="4.1"
+                        src="images/shirt1.svg" alt="">
+                        </figure>
+    
+                        <figure 
+                        class="shirt imgcontainer"
+                        data-number="4.2"
+                        id="shirt-fig2">
+                        <img class="cross" data-number="4.2" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shirt"
+                        data-number="4.2"
+                        src="images/shirt2.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="shirt imgcontainer"
+                        data-number="4.3"
+                        id="shirt-fig3">
+                        <img class="cross" data-number="4.3" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shirt"
+                        data-number="4.3"
+                        src="images/shirt3.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="hair imgcontainer"
+                        data-number="4.4"
+                        id="shirt-fig4">
+                        <img class="cross" data-number="4.4" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shirt"
+                        data-number="4.4"
+                        src="images/shirt4.svg" alt="">
+                        </figure>
+
+                        <figure 
+                        class="hair imgcontainer"
+                        data-number="4.5"
+                        id="shirt-fig5">
+                        <img class="cross" data-number="4.5" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object shirt"
+                        data-number="4.5"
+                        src="images/shirt5.svg" alt="">
+                        </figure>
+
+                        <figure id="shirt-fig6" data-number="4.6">
+                            <img  
+                            class="object"
+                            data-number="4.6"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="shirt-fig7" data-number="4.7">
+                            <img  
+                            class="object"
+                            data-number="4.7"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="shirt-fig8" data-number="4.8">
+                            <img  
+                            class="object"
+                            data-number="4.8"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+    
+                        <figure id="shirt-fig9"
+                        data-number="4.9">
+                            <img  
+                            class="object"
+                            data-number="4.9"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+                        
+                        <figure id="shirt-fig10"
+                        data-number="4.10">
+                            <img  
+                            class="object"
+                            data-number="4.10"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="shirt-fig11"
+                        data-number="4.11">
+                            <img  
+                            class="object"
+                            data-number="4.11"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="shirt-fig12" data-number="3.12">
+                            <img  
+                            class="object"
+                            data-number="4.12"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+    
+    
+                    </section>
+
+                    <section class="menu-grid content"  data-number="5"  id="accesmenu">
+
+                        <figure 
+                        class="acces imgcontainer" data-number="5.1"
+                        id="acces-fig1">    
+                        <img class="cross" data-number="5.1" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object acces" data-number="5.1"
+                        src="images/accessoiry1.svg" alt="">
+                        </figure>
+    
+                        <figure 
+                        class="acces imgcontainer"
+                        data-number="5.2"
+                        id="acces-fig2">
+                        <img class="cross" data-number="5.2" src="images/cross.svg" alt="" >
+                        <img  
+                        class="object acces"
+                        data-number="5.2"
+                        src="images/accessoiry2.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig3" data-number="5.3">
+                            <img  
+                            class="object"
+                            data-number="5.3"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig4" data-number="5.4">
+                            <img  
+                            class="object"
+                            data-number="5.4"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig5" data-number="5.5">
+                            <img  
+                            class="object"
+                            data-number="5.5"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig6" data-number="5.6">
+                            <img  
+                            class="object"
+                            data-number="5.6"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig7" data-number="5.7">
+                            <img  
+                            class="object"
+                            data-number="5.7"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig8" data-number="5.8">
+                            <img  
+                            class="object"
+                            data-number="5.8"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+    
+                        <figure id="acces-fig9"
+                        data-number="5.9">
+                            <img  
+                            class="object"
+                            data-number="5.9"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+                        
+                        <figure id="acces-fig10"
+                        data-number="5.10">
+                            <img  
+                            class="object"
+                            data-number="5.10"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig11"
+                        data-number="5.11">
+                            <img  
+                            class="object"
+                            data-number="5.11"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+
+                        <figure id="acces-fig12" data-number="3.12">
+                            <img  
+                            class="object"
+                            data-number="5.12"
+                            src="images/nothing.svg" alt="">
+                        </figure>
+    
+    
+                    </section>
+
+                </section>
+
+
+
+            </article>
+
+            <section class="gameinfo">
+                <div>
+                    <h2>Generic dressup game</h2>
+                    <p>This very original game idea has been created by Sasja Koning. As well as this whole webpage. Pretty cool.</p>
+                </div>
+                <div>
+                    <h2>Please like and share!</h2>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="images/social-facebook.svg" alt="">
+                            </td>
+                            <td><a href="https://bit.ly/IqT6zt" target="blank">Facebook</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <img src="images/social-instagram.svg" alt=""> 
+                            </td>
+                            <td><a href="https://www.instagram.com/sasjakoning/?hl=nl" target="blank">Instagram</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/social-linkedin.svg" alt="">
+                            </td>
+                            <td><a href="#">LinkedIn</a></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </section>
+
+            <section class="comments">
+                <form>
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="textfield">Reactie:</label>
+                    <textarea id="textfield" name="textfield" rows="4" cols="50"></textarea>
+
+                    <input type="submit" value="Plaatsen">
+                </form>
+
+                <section>
+                    <h3>Henk Bouwer</h3>
+                    <figure>
+                        <img src="images/star_filled.svg" alt="">
+                        <img src="images/star_filled.svg" alt="">
+                        <img src="images/star_filled.svg" alt="">
+                        <img src="images/star_filled.svg" alt="">
+                        <img src="images/star_empty.svg" alt="">
+                    </figure>
+                    <p>Cool Cool Supercool!</p>
+                    <figure >
+                        <img class="like" src="images/like.svg" alt="">
+                        <p>0</p>
+                        <img class="dislike" src="images/like.svg" alt="">
+                    </figure>
+                </section>
+
+                <section>
+                    <h3>Margriet Pronk</h3>
+                    <figure>
+                        <img src="images/star_filled.svg" alt="">
+                        <img src="images/star_filled.svg" alt="">
+                        <img src="images/star_filled.svg" alt="">
+                        <img src="images/star_empty.svg" alt="">
+                        <img src="images/star_empty.svg" alt="">
+                    </figure>
+                    <p>Ik speel dit spel vaak met mijn kleindochter! Geweldig!</p>
+                    <figure>
+                        <img class="like" src="images/like.svg" alt="">
+                        <p>0</p>
+                        <img class="dislike" src="images/like.svg" alt="">
+                    </figure>
+                </section>
+
+            </section>
+
+        </article>
+
+        <aside class="asideleft">
+            <img src="images/asidead.svg" alt="">
+        </aside>
+        <aside class="asideright">
+            <img src="images/asidead.svg" alt="">
+        </aside>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
